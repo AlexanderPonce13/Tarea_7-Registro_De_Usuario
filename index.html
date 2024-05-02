@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre el elemento raíz <html> y especifica el idioma de la página como español -->
+<head> <!-- Abre la sección del encabezado de la página -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define la etiqueta de vista para el diseño adaptable (responsive) -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo de estilo externo "style.css" al documento HTML -->
+    <title>REGISTRO DE USUARIO HTML & CSS</title> <!-- Establece el título de la página -->
+</head>
+<body> <!-- Abre el cuerpo principal de la página -->
+    <div class="imgcontainer"> <!-- Crea un contenedor <div>  -->
+        <img src="logo.png" alt="Fondo" class="fondo"> <!-- Inserta una imagen con la ruta "logo.png" y el texto alternativo "Fondo" -->
+    </div> 
+    <form id="registerForm"> <!-- Inicia un formulario con el ID "registerForm" -->
+        <div class="container"> 
+            <label for="uname"><b>Nombre de usuario</b></label> <!-- Crea una etiqueta de texto para el campo de nombre de usuario -->
+            <input type="text" id="uname" placeholder="Ingrese su nombre de usuario" required> <!-- Crea un campo de entrada de texto para el nombre de usuario -->
+            <label for="email"><b>Correo electrónico</b></label> <!-- Crea una etiqueta de texto para el campo de correo electrónico -->
+            <input type="email" id="email" placeholder="Ingrese su correo electrónico" required> <!-- Crea un campo de entrada de correo electrónico -->
+            <label for="psw"><b>Contraseña</b></label> <!-- Crea una etiqueta de texto para el campo de contraseña -->
+            <input type="password" id="psw" placeholder="Ingrese su contraseña" required> <!-- Crea un campo de entrada de contraseña -->
+            <label for="psw-repeat"><b>Confirmar Contraseña</b></label> <!-- Crea una etiqueta de texto para el campo de confirmación de contraseña -->
+            <input type="password" id="psw-repeat" placeholder="Repita su contraseña" required> <!-- Crea un campo de entrada para repetir la contraseña -->
+            <button type="button" id="registerButton">Registrarse</button> <!-- Crea un botón para registrarse -->
+        </div>
+        <div class="container"> <!-- Abre otro contenedor <div> con la clase "container" -->
+            <button type="button" class="cancelbtn">Cancelar</button> <!-- Crea un botón para cancelar el registro -->
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> <!-- Agrega un mensaje de acuerdo a los términos y privacidad -->
+        </div> 
+    </form> <!-- Cierra el formulario -->
+    <script src="script.js"></script> <!-- Enlaza el archivo de script externo "script.js" al documento HTML -->
+</body> <!-- Cierra el cuerpo de la página -->
+</html> <!-- Cierra el elemento HTML principal -->

@@ -1,0 +1,87 @@
+/* Bordered form */
+form {
+    border: none; /* Eliminar el borde del formulario */
+}
+
+/* Add padding to containers */
+.container {
+    padding: 10px; /* Reducción del relleno */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+body {
+    background-image: url('fondo.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen */
+    background-color: #f1f1f1; /* Color de fondo de respaldo */
+    background-size: cover; /* Cubrir todo el cuerpo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=email] {
+    width: calc(100% - 24px); /* Ajuste del ancho de los campos de texto */
+    padding: 12px; /* Reducción del relleno */
+    margin: 6px 0; /* Reducción del margen */
+    display: inline-block;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Set a style for all buttons */
+button {
+    width: calc(100% - 24px); /* Ajuste del ancho del botón */
+    padding: 12px; /* Reducción del relleno */
+    margin: 6px 0; /* Reducción del margen */
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Agrega un efecto hover para los botones */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilo adicional para el botón de cancelar (rojo) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Centra la imagen del avatar dentro de este contenedor */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Imagen del avatar */
+img.fondo {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Texto "Recuérdame" */
+label {
+    color: #ffffff;
+}
+
+/* Estilo para el mensaje de acuerdo a los términos y privacidad */
+.container p a {
+    color: dodgerblue;
+}
+
+/* Cambia los estilos para span y el botón de cancelar en pantallas extra pequeñas */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
